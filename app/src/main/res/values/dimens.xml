@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="radius1x">8dp</dimen>
+
+    <!--    margin  -->
+    <dimen name="margin1x">4dp</dimen>
+    <dimen name="margin2x">8dp</dimen>
+    <dimen name="margin3x">12dp</dimen>
+    <dimen name="margin4x">16dp</dimen>
+
+    <!--    padding  -->
+    <dimen name="padding1x">4dp</dimen>
+    <dimen name="padding2x">8dp</dimen>
+    <dimen name="padding3x">12dp</dimen>
+
+    <!-- text size    -->
+    <dimen name="txt1x">12sp</dimen>
+    <dimen name="txt2x">16sp</dimen>
+</resources>

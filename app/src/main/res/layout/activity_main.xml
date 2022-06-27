@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin4x"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/card_background"
+        app:cardCornerRadius="@dimen/radius1x"
+        app:cardElevation="0dp"
+        app:contentPadding="@dimen/padding3x">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                style="@style/ShapeAppearanceOverlay.App.CornerSize8Percent"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/cat" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/padding3x"
+                android:paddingEnd="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/dms_ans_bold"
+                        android:text="@string/profile_name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt2x" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_circular"
+                        android:fontFamily="@font/dms_ans_medium"
+                        android:paddingHorizontal="@dimen/padding2x"
+                        android:paddingVertical="@dimen/padding1x"
+                        android:text="@string/hours"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/txt1x" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="@dimen/padding2x">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:alpha=".87"
+                        android:fontFamily="@font/dms_ans_regular"
+                        android:text="@string/job_title"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="@dimen/txt1x" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.60"
+                        android:fontFamily="@font/dms_ans_medium"
+                        android:text="@string/country"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt1x" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/padding2x">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:alpha="0.60"
+                        android:drawablePadding="@dimen/padding1x"
+                        android:fontFamily="@font/dms_ans_regular"
+                        android:gravity="center"
+                        android:text="@string/location"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt2x"
+                        app:drawableLeftCompat="@drawable/location_on" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:alpha="0.38"
+                        android:fontFamily="@font/dms_ans_regular"
+                        android:gravity="end"
+                        android:text="@string/last_seen"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt2x" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dms_ans_regular"
+                        android:text="@string/review_count"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt1x" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/padding1x"
+                        android:fontFamily="@font/dms_ans_bold"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/padding2x"
+                        android:paddingEnd="0dp"
+                        android:text="@string/rating"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt1x"
+                        app:drawableEndCompat="@drawable/ic_baseline_star"
+                        app:drawableTint="@color/yellow" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
